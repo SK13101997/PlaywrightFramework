@@ -7,9 +7,6 @@ on:
   pull_request:
     branches: [ main, master ]
 
-    branches: main
-  pull_request:
-    branches: main
 
 
 jobs:
@@ -58,7 +55,7 @@ jobs:
 
 
       - name: Upload HTML report
-        if: always()
+        
         uses: actions/upload-artifact@v4
         with:
           name: playwright-report
