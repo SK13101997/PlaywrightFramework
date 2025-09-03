@@ -32,7 +32,7 @@ jobs:
       #   run: npm run build
 
       - name: Run Playwright tests
-        run: npx playwright test
+        run: npx playwright test Parabank.spec.js --headed
 
       # Always upload the HTML report so you can download it from the run
       - name: Upload HTML report
