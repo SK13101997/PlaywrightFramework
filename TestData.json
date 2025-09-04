@@ -1,7 +1,18 @@
 {
 
 
-   "Url":"https://parabank.parasoft.com/parabank/index.htm"
+   "Url":"https://parabank.parasoft.com/parabank/index.htm",
+   "fname":"Shivani",
+   "lname":"Inde",
+   "add":"Hinjewadi",
+   "city":"Pune",
+   "state":"Mahrashtra",
+   "zip":"411057",
+   "phone":"8805059543",
+   "ssn":"34566",
+   "user":"ps1317",
+   "pass":"Pashi@17",
+   "repeat":"Pashi@17"
 
 
 }

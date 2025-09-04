@@ -21,8 +21,8 @@ this.RegisterBtn=page.locator("//input[@value='Register']")
 
   }
 
-  async fillDetails(fname,lname,add,city,state,zip,phone,ssn,user,pass,repeat){
-    await this.page.goto("https://parabank.parasoft.com/parabank/index.htm")
+  async fillDetails(url,fname,lname,add,city,state,zip,phone,ssn,user,pass,repeat){
+    await this.page.goto(url)
     await this.RegisterLink.click()
     await this.FirstName.fill(fname)
     await this.LastName.fill(lname)
