@@ -1,15 +1,13 @@
-import {expect,test} from '@playwright/test'
-
-import { RegisterPage } from '../Pages/RegisterPage'
-import { NewAccount } from '../Pages/NewAccount'
-
-const testdata= import {TestData} from '../TestData.json'  
+import { test, expect } from '@playwright/test';
+import { RegisterPage } from '../Pages/RegisterPage.js';
+import { NewAccount } from '../Pages/NewAccount.js';
+import testdata from '../TestData.json' assert { type: 'json' };
 
 test("Testing ParaBAnk Registration page", {tag:'@Super'},async ({page})=>{
 
     const registerpage=new RegisterPage(page)
 
-    await registerpage.fillDetails('shivani','kumbhar','sangli','Pune','Maharashtra','411057','9766043682','123445','sk139712','Passcode@123','Passcode@123')
+    await registerpage.fillDetails(testdata.Url,testdata.fname,testdata.lname,testdata.add,testdata.city,testdata.state,testdata.zip,testdata.phone,testdata.ssn,testdata.user,testdata.pass,testdata.repeat)
     //await expect(page.locator("//h1[@class='title']")).toHaveText("Welcome")
 
 
